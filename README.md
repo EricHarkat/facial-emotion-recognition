@@ -15,6 +15,8 @@ Avant de commencer, assurez-vous d'avoir les outils suivants installés :
 - 🔍 Scikit-learn
 - 🔢 Numpy
 
+le dataset **FER-2013** doit etre récupéré sur Kaggle
+
 Vous pouvez installer les dépendances nécessaires avec la commande suivante :
 
 ```bash
@@ -53,7 +55,7 @@ Le modèle prédit l'émotion du visage et affiche le label de l'émotion sur l'
 
 Exécutez le script d'entraînement pour entraîner le modèle sur le dataset FER-2013 :
 ```bash
-python train_model.py
+python picture_visualisation.py
 ```
 Cela entraînera le modèle et le sauvegardera sous le nom modele_emotion.h5.
 
@@ -61,7 +63,7 @@ Cela entraînera le modèle et le sauvegardera sous le nom modele_emotion.h5.
 
 Une fois le modèle entraîné, vous pouvez lancer le script de détection en temps réel :
 ```bash
-python detect_emotions.py
+python test_webcam_with_model.py
 ```
 Le programme ouvrira la webcam et affichera l'émotion prédite pour chaque visage détecté.
 
